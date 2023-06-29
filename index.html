@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+</head>
+<body>
+    <h1>
+        <center>
+            Welcome to the PMP Complaint forum
+        </center>
+    </h1>
+    <center>
+    <form action="/" method="post">
+        <label>Enter your name: </label>
+        <input type="text" name="username" placeholder="Name: ">
+        <br>
+        <br>
+        <!-- <p>Enter your BITS email ID: </p> -->
+        <label for="bitsemail"> Enter your BITS email ID: </label>
+        <input type="email" name="email" placeholder="Email: " id="bitsemail" required>
+        <br>
+        <br>
+        <label>Enter your Mobile number: </label>
+        <input type="number" name="phonenumber" placeholder="Mobile number: ">
+        <br>
+        <br>
+        <label>Enter your Mentor's name: </label>
+        <input type="text" name="mentor" placeholder="Mentor's name: " required>
+        <br>
+        <br>
+        <label>Enter the Coordinator's name who is in your group: </label>
+        <input type="text" name="coordi" placeholder="Coordinator's name: " required>
+        <!-- <input type="text" name="complaint" placeholder="Complaint: "> -->
+        <br>
+        <br>
+        <label for="drp">Select the type of complaint: </label>
+        <select name="type" id="drp" placeholder="Select">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="q1">Not satisfied with my Mentor</option>
+            <option value="q2">My Mentor did not contact me</option>
+            <option value="q3">My Mentor does not respond to my queries</option>
+        </select>
+        <!-- <label for="complaint">Enter your complaint: </label> -->
+        <p>Enter your complaint: </p>
+        <textarea name="complaint" id="" cols="80" rows="15" id="complaint" placeholder="Type your complaint here..."></textarea>
+        <br>
+        <br>
+        <!-- <a href="/submitted"> -->
+            <button type="submit" name="Submit">Submit</button>
+        <!-- </a> -->
+    </form>
+</center>
+</body>
+</html>

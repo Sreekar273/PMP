@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <title>CMS</title>
+</head>
+<body>
+    <div>
+        <a href="/">Get Details</a>
+        </div>
+        <hr>
+        
+        <% if(details!=null) { %>
+        <table>
+        <tr>
+            <th>Username</th>
+            <th>BITS email </th>
+            <th>Phone Number</th>
+            <th>Mentor name </th>
+            <th>Coordinator Name</th>
+            <th>Complaint type </th>
+            <th>Complaint</th>
+            <th>Created date</th>
+        </tr>
+        <% details.forEach(function(item){ %>
+        <tr>
+            <td><%= item.username %></td>
+            <td><%= item.email %></td>
+            <td><%= item.phonenumber %></td>
+            <td><%= item.mentor %></td>
+            <td><%= item.coordi %></td>
+            <td><%= item.type %></td>
+            <td><%= item.complaint %></td>
+            <td><%= item.created %></td>
+        
+        </tr>
+        <% }) %>
+        </table>
+        <% } %>
+</body>
+</html>
